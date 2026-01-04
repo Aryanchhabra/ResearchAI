@@ -99,7 +99,7 @@ You can also chat with the research results to ask follow-up questions.
 ```
 ├── backend/          # FastAPI backend server
 ├── frontend/nextjs/  # Next.js frontend application
-├── gpt_researcher/   # Core research engine
+├── research_ai/      # Core research engine
 ├── multi_agents/     # Multi-agent system with LangGraph
 └── main.py           # Application entry point
 ```
