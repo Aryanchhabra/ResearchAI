@@ -1,4 +1,4 @@
-from gpt_researcher.utils.workers import WorkerPool
+from research_ai.utils.workers import WorkerPool
 
 from ..actions.utils import stream_output
 from ..actions.web_scraping import scrape_urls

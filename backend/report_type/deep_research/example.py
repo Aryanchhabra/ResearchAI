@@ -2,10 +2,10 @@ from typing import List, Dict, Any, Optional, Set
 from fastapi import WebSocket
 import asyncio
 import logging
-from gpt_researcher import GPTResearcher
-from gpt_researcher.llm_provider.generic.base import ReasoningEfforts
-from gpt_researcher.utils.llm import create_chat_completion
-from gpt_researcher.utils.enum import ReportType, ReportSource, Tone
+from research_ai import GPTResearcher
+from research_ai.llm_provider.generic.base import ReasoningEfforts
+from research_ai.utils.llm import create_chat_completion
+from research_ai.utils.enum import ReportType, ReportSource, Tone
 
 logger = logging.getLogger(__name__)
 

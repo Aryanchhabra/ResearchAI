@@ -1,7 +1,7 @@
 from fastapi import WebSocket
 from typing import Any
 
-from gpt_researcher import GPTResearcher
+from research_ai import GPTResearcher
 
 
 class BasicReport:
@@ -32,7 +32,7 @@ class BasicReport:
         self.headers = headers or {}
 
         # Initialize researcher with optional MCP parameters
-        gpt_researcher_params = {
+        researcher_params = {
             "query": self.query,
             "query_domains": self.query_domains,
             "report_type": self.report_type,
@@ -47,13 +47,13 @@ class BasicReport:
 
         # Add MCP parameters if provided
         if mcp_configs is not None:
-            gpt_researcher_params["mcp_configs"] = mcp_configs
+            researcher_params["mcp_configs"] = mcp_configs
         if mcp_strategy is not None:
-            gpt_researcher_params["mcp_strategy"] = mcp_strategy
+            researcher_params["mcp_strategy"] = mcp_strategy
 
-        self.gpt_researcher = GPTResearcher(**gpt_researcher_params)
+        self.researcher = GPTResearcher(**researcher_params)
 
     async def run(self):
-        await self.gpt_researcher.conduct_research()
-        report = await self.gpt_researcher.write_report()
+        await self.researcher.conduct_research()
+        report = await self.researcher.write_report()
         return report

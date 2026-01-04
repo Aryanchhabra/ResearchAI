@@ -1,4 +1,4 @@
-from gpt_researcher import GPTResearcher
+from research_ai import GPTResearcher
 from backend.utils import write_md_to_pdf
 import asyncio
 

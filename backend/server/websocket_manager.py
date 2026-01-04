@@ -9,8 +9,8 @@ from fastapi import WebSocket
 
 from report_type import BasicReport, DetailedReport
 
-from gpt_researcher.utils.enum import ReportType, Tone
-from gpt_researcher.actions import stream_output  # Import stream_output
+from research_ai.utils.enum import ReportType, Tone
+from research_ai.actions import stream_output  # Import stream_output
 from .server_utils import CustomLogsHandler
 
 logger = logging.getLogger(__name__)
@@ -178,6 +178,6 @@ async def run_agent(task, report_type, report_source, source_urls, document_urls
         report = await researcher.run()
 
     if report_type != "multi_agents" and return_researcher:
-        return report, researcher.gpt_researcher
+        return report, researcher.researcher
     else:
         return report

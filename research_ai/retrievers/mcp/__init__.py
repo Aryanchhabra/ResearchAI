@@ -2,7 +2,7 @@
 MCP Retriever Module
 
 This module contains only the MCP retriever implementation.
-The core MCP functionality has been moved to gpt_researcher.mcp module.
+The core MCP functionality has been moved to research_ai.mcp module.
 """
 import logging
 

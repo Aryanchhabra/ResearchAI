@@ -1,6 +1,6 @@
 import json_repair
 
-from gpt_researcher.llm_provider.generic.base import ReasoningEfforts
+from research_ai.llm_provider.generic.base import ReasoningEfforts
 from ..utils.llm import create_chat_completion
 from ..prompts import PromptFamily
 from typing import Any, List, Dict
@@ -81,7 +81,7 @@ async def generate_sub_queries(
         )
     except Exception as e:
         logger.warning(f"Error with strategic LLM: {e}. Retrying with max_tokens={cfg.strategic_token_limit}.")
-        logger.warning(f"See https://github.com/assafelovic/gpt-researcher/issues/1022")
+        logger.warning(f"Sub-query generation failed. Please check your LLM configuration.")
         try:
             response = await create_chat_completion(
                 model=cfg.strategic_llm_model,

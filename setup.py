@@ -23,7 +23,7 @@ setup(
     name="research-ai",
     version=LATEST_VERSION,
     description="ResearchAI is an intelligent AI-powered research assistant designed for comprehensive web and local research",
-    package_dir={'gpt_researcher': 'gpt_researcher'},
+    package_dir={'research_ai': 'research_ai'},
     packages=find_packages(exclude=exclude_packages),
     long_description=long_description,
     long_description_content_type="text/markdown",

@@ -16,8 +16,8 @@ import os
 
 from dotenv import load_dotenv
 
-from gpt_researcher import GPTResearcher
-from gpt_researcher.utils.enum import ReportType, ReportSource, Tone
+from research_ai import GPTResearcher
+from research_ai.utils.enum import ReportType, ReportSource, Tone
 from backend.report_type import DetailedReport
 from backend.utils import write_md_to_pdf, write_md_to_word
 
