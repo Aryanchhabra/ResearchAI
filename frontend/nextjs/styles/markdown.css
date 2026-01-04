@@ -1,0 +1,255 @@
+.markdown-content {
+  /* Base styles - Modern sans-serif font */
+  color: #e5e5e5;
+  font-family: 'GeistSans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+
+  /* Headings - Clean and minimal */
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.3;
+    font-weight: 400;
+    margin-top: 1.5em;
+    margin-bottom: 0.75em;
+    color: #ffffff;
+    letter-spacing: -0.02em;
+  }
+
+  h1 { 
+    font-size: 2.25em; 
+    font-weight: 300;
+    margin-top: 0;
+  }
+  h2 { 
+    font-size: 1.875em; 
+    font-weight: 350;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 0.5em;
+  }
+  h3 { 
+    font-size: 1.5em; 
+    font-weight: 400;
+  }
+  h4 { 
+    font-size: 1.25em; 
+    font-weight: 400;
+  }
+  h5 { 
+    font-size: 1.125em; 
+    font-weight: 400;
+  }
+  h6 { 
+    font-size: 1em; 
+    font-weight: 500;
+  }
+
+  /* Paragraphs and spacing */
+  p {
+    margin: 0 0 1.25em 0;
+    line-height: 1.75;
+    color: #d1d5db;
+    font-weight: 300;
+  }
+
+  /* Text formatting */
+  strong, b {
+    font-weight: 500;
+    color: #ffffff;
+  }
+
+  em, i {
+    font-style: italic;
+    color: #e5e7eb;
+  }
+
+  /* Strikethrough - GFM feature */
+  del, s {
+    text-decoration: line-through;
+    opacity: 0.6;
+  }
+
+  /* Lists - Refined spacing */
+  ul, ol {
+    margin: 1em 0;
+    padding-left: 1.75em;
+    line-height: 1.75;
+  }
+
+  li {
+    margin: 0.5em 0;
+    padding-left: 0.25em;
+    color: #d1d5db;
+  }
+
+  ul li {
+    list-style-type: disc;
+    list-style-color: rgba(255, 255, 255, 0.3);
+  }
+
+  ol li {
+    list-style-type: decimal;
+    list-style-color: rgba(255, 255, 255, 0.3);
+  }
+
+  /* Nested lists */
+  ul ul, ol ol, ul ol, ol ul {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  /* Task lists - GFM feature */
+  ul.contains-task-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .task-list-item {
+    list-style-type: none;
+    padding-left: 1.5em;
+    position: relative;
+  }
+
+  .task-list-item-checkbox {
+    position: absolute;
+    left: 0;
+    top: 0.25em;
+    margin-right: 0.5em;
+  }
+
+  /* Links - Teal accent */
+  a {
+    color: #14b8a6;
+    text-decoration: none;
+    font-weight: 400;
+    border-bottom: 1px solid rgba(20, 184, 166, 0.3);
+    transition: all 0.2s ease;
+    
+    &:hover {
+      color: #2dd4bf;
+      border-bottom-color: rgba(45, 212, 191, 0.6);
+    }
+  }
+
+  /* Code blocks - Dark theme */
+  pre {
+    background-color: rgba(10, 10, 10, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.25em;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 1.5em 0;
+    font-size: 0.9em;
+    line-height: 1.6;
+  }
+
+  code {
+    font-family: 'GeistMono', 'Fira Code', 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+    padding: 0.2em 0.5em;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    color: #2dd4bf;
+    font-weight: 400;
+  }
+
+  pre code {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    color: #e5e5e5;
+  }
+
+  /* Blockquotes - Subtle accent */
+  blockquote {
+    border-left: 3px solid rgba(20, 184, 166, 0.4);
+    margin: 1.5em 0;
+    padding: 0.75em 1.25em;
+    padding-left: 1.5em;
+    font-style: italic;
+    background-color: rgba(20, 184, 166, 0.05);
+    border-radius: 0 8px 8px 0;
+    color: #d1d5db;
+  }
+
+  /* Tables - Modern dark theme */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1.5em 0;
+    background-color: rgba(15, 15, 15, 0.5);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  th, td {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.75em 1em;
+    text-align: left;
+  }
+
+  th {
+    background-color: rgba(255, 255, 255, 0.05);
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 0.95em;
+    letter-spacing: 0.02em;
+  }
+
+  td {
+    color: #d1d5db;
+  }
+
+  tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.02);
+  }
+
+  tr:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+  /* Horizontal rule */
+  hr {
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 2em 0;
+  }
+
+  /* Images */
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1.5em 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Definition Lists */
+  dl {
+    margin: 1.5em 0;
+  }
+
+  dt {
+    font-weight: 500;
+    margin-top: 1em;
+    color: #ffffff;
+  }
+
+  dd {
+    margin-left: 2em;
+    margin-bottom: 0.75em;
+    color: #d1d5db;
+  }
+
+  /* Improve spacing between sections */
+  > *:first-child {
+    margin-top: 0;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
